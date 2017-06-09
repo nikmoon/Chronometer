@@ -16,7 +16,7 @@ public class ChronoThread extends Thread {
 
     synchronized long secondsPassed() {
         try {
-            wait();
+            wait(2000);
         }
         catch (InterruptedException ex) {
             System.exit(-1);

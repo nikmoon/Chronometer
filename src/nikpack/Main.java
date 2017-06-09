@@ -14,7 +14,11 @@ public class Main {
         t7.start();
         Thread.sleep(50*1000);
         chronoThread.stopThread = true;
+        t5.stopThread = true;
+        t7.stopThread = true;
         chronoThread.join();
+        t5.join();
+        t7.join();
         System.out.println("Все потоки завершены");
     }
 }
